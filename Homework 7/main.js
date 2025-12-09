@@ -40,7 +40,8 @@ fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita', {
     data.drinks.forEach(drink => {
         let li = document.createElement('li');
         let img = document.createElement('img');
-        img.src = drink.strImageSource;
+        img.src = drink.strDrinkThumb;
+        img.width = 100;
         li.textContent = drink.strDrink;
         ul.appendChild(li);
         ul.appendChild(img);
