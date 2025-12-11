@@ -63,7 +63,6 @@ addForm.addEventListener("submit", function (e) {
   let title = document.getElementById("titleInput").value;
   let body = document.getElementById("bodyInput").value;
 
-  // Optional: POST to JSONPlaceholder
   fetch("https://jsonplaceholder.typicode.com/posts", {
     method: "POST",
     body: JSON.stringify({ title, body, userId: 11 }),
